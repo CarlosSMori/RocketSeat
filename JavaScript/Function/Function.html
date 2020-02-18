@@ -5,15 +5,42 @@
     </head>
 
     <body>
-
-
-
-
-
-
-
-
         <script>
+
+            // Sample 
+            function soma(number1, number2){
+                var result = number1 + number2;
+                return result;
+            }
+            var result = soma(1,2);
+            console.log(result);
+
+            // Case 1º
+            function retornaSexo(sexo){
+                // M, F
+                // Masculino, Feminino
+                if (sexo === 'M'){
+                    return 'Masculino'
+                } else {
+                    return 'Feminino'
+                }
+            }
+            var result = retornaSexo('M');
+            console.log(result);
+
+            // Case 2º
+            function retornaSexo(sexo){
+                switch(sexo){
+                    case 'M':
+                        return 'Masculino';
+                    case 'F':
+                        return 'Feminino';
+                    default:
+                        return 'Outro';
+                }
+            }
+            var result = retornaSexo('a');
+            console.log(result);
 
         </script>
     </body>
