@@ -1,0 +1,46 @@
+<html lang = 'pt-BR'>
+    <head>
+        <meta charset = 'UTF-8'>
+    </head>
+    <body>
+        <script>
+            // AND, OR, NOT
+            
+            // Case Operator AND
+            var sex = 'M', age = 38;
+                
+                if(sex === 'M' && age >= 18){
+                    console.log('OK');
+                }
+            
+            // Case Operator OR
+            var sex = 'F', age = 10;
+                
+                if(sex === 'M' || age >= 18){
+                    console.log('FAIL');
+                }
+            
+            // Case Operator NOT
+            var sex =  'F';
+                
+                if(sex !== 'M'){
+                    console.log('OK');
+                }
+            
+
+            // Case variable is TRUE
+            var sex = 'M';
+                
+                var Male = (sex === 'M');
+
+                console.log(Male);
+        
+            // Case variable is FALSE
+            var sex = 'F';
+                
+                var Male = (sex === 'M');
+
+                console.log(Male);
+        </script>
+    </body>
+</html> 
