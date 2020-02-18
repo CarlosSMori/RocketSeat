@@ -1,45 +1,51 @@
 <html lang="pt-BR">
     <head>
         <meta charset = 'UTF-8'>
-        <title>Página para funções</title>
+        <title>Página para funções e condições</title>
     </head>
 
     <body>
         <script>
 
             // Sample 
-            function soma(number1, number2){
+            function plus(number1, number2){
                 var result = number1 + number2;
                 return result;
             }
-            var result = soma(1,2);
+            var result = plus(1,2);
             console.log(result);
 
             // Case 1º
-            function retornaSexo(sexo){
+            function returnSex(sex){
                 // M, F
                 // Masculino, Feminino
-                if (sexo === 'M'){
-                    return 'Masculino'
+                if (sex === 'M'){
+                    return 'Male'
                 } else {
-                    return 'Feminino'
+                    return 'Female'
                 }
             }
-            var result = retornaSexo('M');
+            var result = returnSex('M');
             console.log(result);
 
             // Case 2º
-            function retornaSexo(sexo){
-                switch(sexo){
+            function returnSex(sex){
+                switch(sex){
                     case 'M':
-                        return 'Masculino';
+                        return 'Male';
                     case 'F':
-                        return 'Feminino';
+                        return 'Female';
                     default:
-                        return 'Outro';
+                        return 'Others';
                 }
             }
-            var result = retornaSexo('a');
+            var result = returnSex('M');
+            console.log(result);
+
+            var result = returnSex('F');
+            console.log(result);
+            
+            var result = returnSex('aaaa');
             console.log(result);
 
         </script>
