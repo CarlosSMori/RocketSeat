@@ -5,19 +5,35 @@
     <body>
         <script>
             
-        // Case variable is TRUE
-            var sex = 'M';
-                
-                var Male = (sex === 'M');
 
-                console.log(Male);
-        
-            // Case variable is FALSE
-            var sex = 'F';
-                
-                var Male = (sex === 'M');
 
-                console.log(Male);
+
+            function retornaSexo(sexo){
+                if (sexo === 'M'){
+                    return 'MACULINO';
+                }
+                else if(sexo ==='F'){
+                    return 'FEMININO';
+                }
+                else{
+                    return 'OUTROS';
+                }
+            }
+            var resultado = retornaSexo('M');
+            console.log(resultado);
+
+            function retornaSexo(sexo){
+                switch(sexo){
+                    case 'M':
+                        return 'MACULINO';
+                    case 'F' :
+                        return 'FEMININO';
+                    default :
+                        return 'OUTROS';
+                }
+            }
+            var resultado = retornaSexo('M');
+            console.log(resultado);
 
         </script>
     </body>
