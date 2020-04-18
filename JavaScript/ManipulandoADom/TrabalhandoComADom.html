@@ -1,0 +1,62 @@
+<html lang='pt-BR'>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Curso JavaScript</title>
+</head>   
+
+<body>
+    
+    <div id = "app">
+        <input type = "text" name = "nome"/>
+        <button class = "Botao">Adicionar</button>
+        <br>
+    </div>
+---------------------------------------------------------------------------------------
+    <div id = "app1">
+        <input type = "text" name = "nome" id = "id"/>
+        <button class = "Botao">Adicionar</button>
+        <br>
+    </div>
+---------------------------------------------------------------------------------------
+    <div id = "app2">
+        <input type = "text" name = "nome" id = "id" class = "class"/>
+        <button class = "botao" >Adicionar</button>
+        <br>
+    </div>
+
+    <script>
+        var inputElement = document.getElementsByTagName('nome');
+        console.log(inputElement)
+        /*Usando getElementByTagName*/
+        
+        var inputElement = document.getElementById('id');
+        console.log(inputElement);
+        /*Usando getElementById*/
+        
+        var inputElement = document.getElementsByClassName('class');
+        console.log(inputElement);
+        /*Usando getElementByClassName*/
+
+        var inputElement = document.querySelector('div#app input ');
+        console.log(inputElement);
+        /*Usando querySelector*/
+
+        var inputElement = document.querySelector('input[id=id]');
+        console.log(inputElement);
+        /*Usando queryselector*/
+
+        var inputElement = document.querySelectorAll('input');
+        console.log(inputElement);
+        /*Usando querySelectorAll.*/
+
+        var btnElement = document.querySelector('button,botao');
+        
+        btnElement.onclick = function(){
+            alert('Botão Clicado');
+        }
+        /*Usando querySelector com funções.*/
+    </script>
+
+</body>
+</html>
