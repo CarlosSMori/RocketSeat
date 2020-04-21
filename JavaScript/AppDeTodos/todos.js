@@ -1,19 +1,23 @@
+
 var listElement =  document.querySelector('#app ul');
 var inputElement = document.querySelector('#app input');
 var buttonElement = document.querySelector('#app button');
 
-var todos = ['Fazer Café',
+var todos = [
+    'Fazer Café',
     'Estudar JavaScript',
-    'Acessar Comunidade Da RocketSeat'
-    ];
+    'Acessar Comunidade Da Rocketseat'
+];
 
     function renderTodos(){
-       for (todo of todos){
-           var todosElement =  document.createElement('li');
-           var todosText = document.createTextNode(todo);
+        listElement.innerHTML = '';
 
-           todoElement.appendChild(todosText);
-           listElement.appendChild(todosElement);
+       for (todo of todos){
+           console.log()
+           var todoElement =  document.createElement('li');
+           var todoText = document.createTextNode(todo);
+           todoElement.appendChild(todoText); 
+           listElement.appendChild(todoElement);
        } 
     }
 
